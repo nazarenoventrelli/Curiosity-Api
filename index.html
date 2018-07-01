@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Curiosity </title>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src = "js/jquery-3.3.1.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"  >
+	<script src="js/jquery-ui.js"></script>
+	
+	<script src="js/jquery.blockUI.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilosCuriosity.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+</head>
+<body>
+	<main class="row primeraFila">
+	<section class="col-md-3">
+		<nav class="navPanel">
+
+			<div class="row ">
+				<label>Fecha seleccionada: </label>
+				
+			</div>
+			<input  type="text" id="datepicker" value="">
+				
+			<div class="progress row">
+
+				  <div id="bar" class="progress-bar progress-bar-striped active bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+				  </div>
+
+			</div>
+			<div class="row">
+				<input type="button" class="btn btn-info" id="btn_anterior" value="Anterior">
+				<input type="button" class="btn btn-info" id="btn_siguiente" value="Siguiente">
+
+			</div>
+			<div class ="row">
+				<label>Fecha:</label><span id="texto_fecha"></span> 
+			</div>
+			<div class="row">
+				<label>Cantidad: </label><span id="texto_cantidad"></span>
+			</div>
+			<div class="" id="InfoAd">
+				<div class="row">
+					<label >Sol n: </label><span title="Dias marcianos desde la llegada del Curiosity." id="texto_sol" ></span>
+				</div>
+				<div class="row">
+					<a class="btn btn-danger btn-sm " data-toggle="collapse" href="#masInfo" role="button" aria-expanded="false" aria-controls="collapseExample">
+					    info adicional
+					  </a>
+				</div>
+					 <div id="masInfo" class="collapse">
+					 	<div class="row">
+						<input type="button" class="btn btn-secondary btn-sm" id="btn_info" value="Informacion de misiones">
+										</div>
+					 	<div class="row">
+
+						<input type="button" class="btn btn-secondary btn-sm " id="btn_ubicacion" value="Ubicacion">
+					</div>
+					</div>
+				
+			</div>
+		</nav>
+	</section>
+
+	<section class="col-md">
+		<div class="row justify-content-md-center" id="contenedorPrincipal">
+			
+		</div>
+	</section>
+</main>
+</body>
+	<script src="js/scriptCuriosity.js"></script>
+</body>
+</html>
